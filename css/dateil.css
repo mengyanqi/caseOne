@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+img {
+  width: 100%;
+}
+.warp {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #cda861;
+  background: url(../img/brand-detail-bg.png) no-repeat,
+    linear-gradient(127deg, rgba(225, 193, 139, 1), rgba(205, 168, 97, 1));
+  background-size: contain;
+  padding-top: 0.33rem;
+  padding-bottom: 0.33rem;
+}
+.date-header {
+  width: 6.9rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  position: relative;
+}
+.date-header-left p:first-child {
+  width: 3rem;
+  overflow: hidden;
+  height: 0.5rem;
+  font-size: 0.48rem;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.42rem;
+  margin-left: 0.1rem;
+  margin-top: 0.08rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.date-header-left p img {
+  width: 0.26rem;
+  height: 0.26rem;
+  position: relative;
+  top: 10%;
+  margin-right: 0.15rem;
+  margin-left: 0.13rem;
+}
+.date-header-left p:nth-child(2) {
+  font-size: 0.24rem;
+  font-family: 'PingFang-SC-Medium';
+  font-weight: 500;
+  line-height: 0.24rem;
+  margin-top: 0.26rem;
+  width: 3.48rem;
+  height: 0.36rem;
+  background: rgba(32, 32, 40, 0.16);
+  border-radius: 0.19rem;
+}
+.date-header-left p:nth-child(2) span {
+  color: rgba(255, 255, 255, 1);
+  margin-right: 0.14rem;
+}
+.date-header #imgLogo {
+  position: absolute;
+  right: 0rem;
+  width: 2.57rem;
+  height: 1.6rem;
+}
+#imgLogo img {
+  width: 2.57rem;
+  height: 1.6rem;
+}
+.date-header-left {
+  width: 3.5rem;
+  position: absolute;
+}
+.content-main {
+  width: 6.9rem;
+  /* height:19.22rem; */
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0.16rem;
+  margin: 0 auto;
+  margin-top: 0.45rem;
+  padding-bottom: 0.5rem;
+  /* overflow: hidden; */
+}
+.tablist .select {
+  font-size: 0.36rem;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  line-height: 0.7rem;
+  color: #222222;
+}
+.tablist {
+  width: 90%;
+  height: 0.88rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  border-radius: 0.04rem;
+  background: #fff;
+}
+.tablist li {
+  font-size: 0.28rem;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  color: rgba(102, 102, 102, 1);
+  list-style: none;
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  line-height: 0.88rem;
+}
+.tablist li a {
+  color: rgba(102, 102, 102, 1);
+  text-decoration: none;
+}
+.tablist li p {
+  width: 0.4rem;
+  height: 0.12rem;
+  margin: 0 auto;
+  background: rgba(255, 215, 77, 1);
+  border-radius: 0.06rem;
+}
+.divide {
+  width: 5.9rem;
+  display: block;
+  margin: 0 auto;
+}
+.company-introduction {
+  width: 6.04rem;
+  margin: 0 auto;
+}
+.company-header {
+  width: 100%;
+}
+.company-header img {
+  width: 0.23rem;
+  height: 0.27rem;
+  margin-right: 0.22rem;
+}
+.company-header p {
+  font-size: 0.3rem;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  color: rgba(34, 34, 34, 1);
+  margin-top: 0.48rem;
+  margin-bottom: 0.35rem;
+}
+.company-content {
+  overflow: hidden;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+.big-div {
+  height: auto;
+}
+.samll-div {
+  height: 1.25rem;
+}
+.company-content p {
+  font-size: 0.28rem;
+  font-family: 'PingFang-SC-Regular';
+  font-weight: 400;
+  color: rgba(34, 34, 34, 1);
+  line-height: 0.48rem;
+  text-indent: 2em;
+}
+.showTime {
+  width: 0.95rem;
+  margin: 0 auto;
+}
+.showTime p {
+  font-size: 0.28rem;
+  font-family: 'PingFang-SC-Regular';
+  font-weight: 400;
+  color: rgba(205, 168, 97, 1);
+  line-height: 0.48rem;
+}
+.showTime p img:nth-child(2) {
+  display: none;
+}
+.showTime p img {
+  width: 0.2rem;
+  height: 0.2rem;
+}

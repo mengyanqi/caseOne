@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>品牌名片详情</title>
+    <link rel="stylesheet" href="css/dateil.css" />
+    <script type="text/javascript">
+      ;(function() {
+        updateFontSize()
+
+        function updateFontSize() {
+          var width = document.documentElement.getBoundingClientRect().width
+          // console.log(width);
+          var fontSize = width / 7.5
+          document.documentElement.style.fontSize = fontSize + 'px'
+        }
+        window.onresize = function() {
+          updateFontSize()
+        }
+      })()
+    </script>
+  </head>
+
+  <body>
+    <div class="warp">
+      <div class="date-header">
+        <div class="date-header-left">
+          <p id="detaTitle">九一动力内蒙古蒙牛乳业股份有限公司</p>
+          <p>
+            <img src="img/time.png" alt="time" /><span>更新时间</span
+            ><span id="newTime">2018/06/24</span>
+          </p>
+        </div>
+        <div id="imgLogo"><img src="img/91.png" /></div>
+      </div>
+      <div class="content-main" id="contentMain">
+        <ul class="tablist" id="tablist">
+          <li><a href="#company">公司介绍</a></li>
+          <li><a href="#barnd">品牌简介</a></li>
+          <li><a href="#ground">集团简介</a></li>
+        </ul>
+        <img src="img/divide_line.png" alt="" class="divide" />
+        <div class="company-introduction" id="company">
+          <div class="company-header">
+            <p><img src="img/brand_detail_icon.png" alt="" />公司介绍</p>
+          </div>
+          <div class="company-content" id="companyText">
+            <p>公司名称: 内蒙古蒙牛乳业股份有限公司</p>
+            <p>成立时间: 1999年08月18日</p>
+            <p>官方网站: http://www.mengniu.com.cn/</p>
+            <p>公司名称: 内蒙古蒙牛乳业股份有限公司</p>
+            <p>成立时间: 1999年08月18日</p>
+            <p>官方网站: http://www.mengniu.com.cn/</p>
+          </div>
+          <div class="showTime">
+            <p>
+              <img src="img/arrow_down.png" alt="" />
+              <img src="img/arrow_up.png" alt="" />
+              <span id="showS">展开</span>
+            </p>
+          </div>
+        </div>
+        <div class="company-introduction" id="barnd">
+          <div class="company-header">
+            <p><img src="img/brand_detail_icon.png" alt="" />品牌简介</p>
+          </div>
+          <div class="company-content" id="barndText">
+            <p>
+              蒙牛是一家总部位于中华人民共和国内蒙古的乳制品生产企业，
+              蒙牛是中国大陆生产牛奶、酸奶和乳制品的领头企业之一，
+              1999年成立，至2005年时已成为中国奶制品营业额第二大公司，
+              其中液态奶和冰淇淋的产量都居全中国第一。控股公司的中国蒙
+              牛乳业有限公司(港交所:2319)是一家在香港交易所上市的工业公司。
+              蒙牛主要业务是制造液体奶、冰激凌和其他乳制品。蒙牛公司在开曼群岛注册，主席为宁高宁。
+            </p>
+          </div>
+          <div class="showTime">
+            <p>
+              <img src="img/arrow_down.png" alt="" />
+              <img src="img/arrow_up.png" alt="" />
+              <span id="showS">展开</span>
+            </p>
+          </div>
+        </div>
+        <div class="company-introduction" id="ground">
+          <div class="company-header">
+            <p><img src="img/brand_detail_icon.png" alt="" />集团简介</p>
+          </div>
+          <div class="company-content" id="lastCont">
+            <p>
+              1999年8月，内蒙古蒙牛乳业（集团）股份有限公司（简称蒙牛乳业集团）成立，
+              总部设在中国乳都核心区――内蒙古和林格尔经济开发区，拥有总资产100多亿元，
+              职工近3万人，乳制品年生产能力达600万吨。
+              到目前为止，包括和林基地在内，蒙牛乳业集团已经在全国16个省区市建立生产基地20多个，
+              拥有液态奶、酸奶、冰淇淋、奶品、奶酪五大系列400多个品项，产品以其优良的品质覆盖国内市场，
+              并出口到美国、加拿大、蒙古、东南亚及港澳等多个国家和地区。
+              蒙牛乳业，是“蒙牛乳业集团”的简称。
+            </p>
+          </div>
+          <div class="showTime" id="lastShow">
+            <p>
+              <img src="img/arrow_down.png" alt="" />
+              <img src="img/arrow_up.png" alt="" />
+              <span id="showS">展开</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/jquery-1.7.min.js"></script>
+  <script src="js/cardDetail.js"></script>
+  <script src="js/utils.js"></script>
+  <script></script>
+</html>

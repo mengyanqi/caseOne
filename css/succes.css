@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+img {
+  width: 100%;
+}
+.warp {
+  background: rgba(246, 246, 246, 1);
+}
+#seccesHeader {
+  background-image: url(../img/banner_big_bg.png);
+  background-size: 100%;
+  width: 7.5rem;
+  height: 4.7rem;
+  padding-top: 0.5rem;
+}
+.secces-header-title {
+  height: 1.25rem;
+  width: 6.5rem;
+  margin: 0 auto;
+  background: url(../img/brown_name_box.png);
+  background-size: 100%;
+}
+.secces-header-title p:nth-child(1) {
+  font-size: 0.56rem;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  color: rgba(100, 62, 13, 1);
+  text-align: center;
+  line-height: 0.45rem;
+}
+.secces-header-title p:nth-child(2) {
+  font-size: 0.34rem;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  color: rgba(100, 62, 13, 1);
+  text-align: center;
+  width: 4.7rem;
+  line-height: 0.6rem;
+  height: 0.64rem;
+  border: 0.02rem solid rgba(100, 62, 13, 1);
+  border-radius: 0.32rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.24rem;
+}
+#seccesContent {
+  width: 7.5rem;
+  padding-bottom: 0.15rem;
+  padding-top: 0.28rem;
+  background: rgba(246, 246, 246, 1);
+  border-radius: 0.2rem 0.2rem 0rem 0rem;
+  transform: translate(0, -0.35rem);
+  position: absolute;
+}
+.informention {
+  width: 6.96rem;
+  height: 3.71rem;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(../img/ranking-bg.png);
+  background-size: 100%;
+  margin-bottom: 0.2rem;
+}
+.informention:nth-child(1) {
+  background-image: url(../img/ranking-one-bg.png);
+}
+.inforName {
+  width: 6.42rem;
+  height: 2rem;
+  border-bottom: 0.02rem solid rgba(173, 159, 102, 0.5);
+  margin: 0 auto;
+  position: relative;
+}
+.inforName-leftImg {
+  width: 2.23rem;
+  height: 1.38rem;
+  border: 0.13rem solid transparent;
+  border-radius: 0.16rem;
+  position: absolute;
+  transform: translate(0, 0.2rem);
+}
+.inforName-leftImg img {
+  border-radius: 0.12rem;
+  display: block;
+}
+#king {
+  width: 0.9rem;
+  height: 0.54rem;
+  position: absolute;
+  transform: translate(70%, -100%);
+  z-index: 5;
+}
+.inforName-leftImg {
+  border-image: url(../img/vote_img_border.png) 6 6 round;
+  -moz-border-image: url(../img/vote_img_border.png) 6 6 round; /* Old Firefox */
+  -webkit-border-image: url(../img/vote_img_border.png) 6 6 round; /* Safari and Chrome */
+  -o-border-image: url(../img/vote_img_border.png) 6 6 round; /* Opera */
+}
+.inforName-rightP {
+  width: 3.8rem;
+  position: absolute;
+  transform: translate(2.68rem, 0.22rem);
+}
+#rightP span {
+  width: 0.44rem;
+  height: 0.44rem;
+  display: block;
+  background: url(../img/vote_ranking_bg.png) no-repeat;
+  background-size: 100%;
+  font-size: 0.3rem;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  color: rgba(124, 80, 30, 1);
+  line-height: 0.44rem;
+  text-align: center;
+  position: absolute;
+}
+#rightP p {
+  font-size: 0.34rem;
+  width: 3.1rem;
+  height: 0.35rem;
+  font-family: 'PingFang-SC-Medium';
+  font-weight: bold;
+  color: rgba(68, 68, 68, 1);
+  line-height: 0.35rem;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box; /* 几行后显示省略号 */
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+#rightP {
+  width: 3.65rem;
+  height: 0.75rem;
+  padding-top: 0.1rem;
+  position: relative;
+}
+.inforName-rightP > p {
+  width: 3.3rem;
+  height: 0.65rem;
+  overflow: hidden;
+  font-size: 0.26rem;
+  font-family: 'PingFang-SC-Medium';
+  font-weight: bold;
+  color: rgba(102, 102, 102, 1);
+  line-height: 0.36rem;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.inforGround {
+  width: 5.75rem;
+}
+.inforGround ul {
+  width: 6rem;
+  margin-left: 0.25rem;
+  margin-top: 0.1rem;
+}
+.inforGround ul li {
+  float: left;
+  height: 0.64rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.inforGround ul li:nth-child(odd) {
+  width: 0.4rem;
+  line-height: 0%;
+  margin-right: 0.02rem;
+}
+.inforGround ul li img {
+  line-height: 0%;
+}
+.inforGround ul li:nth-child(even) {
+  width: 5.5rem;
+  font-size: 0.26rem;
+  font-family: 'PingFang-SC-Medium';
+  font-weight: bold;
+  color: rgba(153, 153, 153, 1);
+  line-height: 0.36rem;
+  overflow: hidden;
+}

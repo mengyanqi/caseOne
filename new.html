@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+  </head>
+  <body>
+    <ul id="movieList">
+      <!-- <li>
+          <b>{{= Name}}</b> ${ReleaseYear}
+        </li> -->
+      <script id="movieTemplate" type="text/x-jquery-tmpl">
+
+        <li>
+            <b>
+            ${Name}
+            </b>
+            ${ReleaseYear}
+            {{if name}}
+            ${name}
+            {{else sex}}
+            ${sex}
+            {{/if}}
+        </li>
+      </script>
+    </ul>
+    <!-- {{tmpl}} -->
+    <div id="tmpl"></div>
+    <script id="tmpl1" type="text/x-jquery-tmpl">
+      <div style="margin-bottom:10px;">
+      　　<span>${ID}</span>
+      　　<span style="margin-left:10px;">
+            {{tmpl($data) '#tmpl2'}}
+        </span>
+      </div>
+    </script>
+    <script id="tmpl2" type="type/x-jquery-tmpl">
+      {{each Name}}
+      ${$value}
+      {{/each}}
+    </script>
+    <script type="text/javascript">
+      var users = [
+        { ID: 'think8848', Name: ['Joseph', 'Chan'] },
+        { ID: 'aCloud', Name: ['Mary', 'Cheung'] }
+      ]
+      $('#tmpl1')
+        .tmpl(users)
+        .appendTo('#tmpl')
+    </script>
+    <!-- {{html 变量名}} -->
+    <div id="div_html"></div>
+    <script id="html" type="text/x-jquery-tmpl">
+      <div style="margin-bottom:10px;">
+      <span>${ID}</span>
+      <span style="margin-left:10px;">{{= Name}}</span>
+      　　${tee}
+      　　{{html tee}}
+      </div>
+    </script>
+    <script type="text/javascript">
+      var user = [
+        {
+          ID: 'think8848',
+          Name: 'Joseph Chan',
+          tee: '<button>html</button>'
+        },
+        {
+          ID: 'thinkdfs48',
+          Name: 'Jodgshdfeph Chan',
+          tee: '<p>text</p>'
+        }
+      ]
+      $('#html')
+        .tmpl(user)
+        .appendTo('#div_html')
+    </script>
+    <!-- {{else if}}的分支判断 -->
+    <div id="div_ifelse"></div>
+    <script id="ifelse" type="text/x-jquery-tmpl">
+      <div style="margin-bottom:10px;"><span>${ID}</span><span style="margin-left:10px;">{{= Name}}</span>
+          {{if Status}}
+              <span>Status${Status}</span>
+          {{else App}}
+              <span>App${App}</span>
+          {{else}}
+              <span>None</span>
+          {{/if}}
+      </div>
+    </script>
+    <script type="text/javascript">
+      var users = [
+        { ID: 'think8848', Name: 'Joseph Chan', Status: 1, App: 0 },
+        { ID: 'aCloud', Name: 'Mary Cheung', App: 1 },
+        { ID: 'bMingdao', Name: 'Jerry Jin' }
+      ]
+      $('#ifelse')
+        .tmpl(users)
+        .appendTo('#div_ifelse')
+    </script>
+    <!-- 最上面的数据 -->
+    <script>
+      var movies = [
+        { Name: 'The Red Violin', ReleaseYear: '1998', name: 'Limimg' },
+        { Name: 'Eyes Wide Shut', ReleaseYear: '1999', sex: '男' },
+        { Name: 'The Inheritance', ReleaseYear: '1976' }
+      ]
+      //   var obj = {}
+      //   obj.list = movies
+      //   console.log(obj)
+      //   如果没有数组对象的名称就定义一个
+      $('#movieTemplate')
+        .tmpl(movies)
+        .appendTo('#movieList')
+    </script>
+  </body>
+</html>

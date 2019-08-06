@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>品牌中国-首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        ; (function () {
+            updateFontSize()
+
+            function updateFontSize() {
+                var width = document.documentElement.getBoundingClientRect().width
+                console.log(width);
+                var fontSize = width / 7.5
+                document.documentElement.style.fontSize = fontSize + 'px'
+            }
+            window.onresize = function () {
+                updateFontSize()
+            }
+        })()
+
+    </script>
+</head>
+
+<body>
+
+    <div class="warp">
+        <div class="banner"></div>
+        <div class="header">
+            <ul>
+                <li><img src="img/brand.png" alt=""><a href="#brandCard">品牌名片</a></li>
+                <li><img src="img/success_case.png" alt=""><a href="#successfulCase">成功案例</a></li>
+                <li><img src="img/activity_aim.png" alt=""><a href="#contentTitle">活动宗旨</a></li>
+            </ul>
+        </div>
+        <!-- header over -->
+        <div class="main">
+
+            <div class="voting-records">
+                <div class="main-header-title">
+                    <h4>投票记录</h4>
+                </div>
+                <div class="vsting-cont">
+                    <div class="cont-list">
+                        <ul>
+
+                            <li>
+                                <img src="img/niu_com.png" alt="">
+                            </li>
+                            <li>中国电动车</li>
+                            <li>去投票</li>
+                        </ul>
+                    </div>
+                    <div class="cont-list">
+                        <ul>
+                            <li>
+                                <img src="img/niu_com.png" alt="">
+                            </li>
+                            <li>中国电动车</li>
+                            <li>去投票</li>
+                        </ul>
+                    </div>
+                    <div class="cont-list">
+                        <ul>
+                            <li>
+                                <img src="img/niu_com.png" alt="">
+                            </li>
+                            <li>中国电动车</li>
+                            <li>申请奖牌</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="brand-card" id="brandCard">
+                <div class="main-header-title">
+                        <h4>品牌名片</h4><div class="main-header-more"><a href="cardList.html">更多></a></div>
+                    </ul>
+                </div>
+                <div class="brand-cont">
+                    <div id="brandUl">
+                       <!-- 
+                        <div class="card-li">
+                            <img src="img/cont_list_japan.png" alt="">
+                            <p class="brand-title">张有为财团</p>
+                            <span class="block"></span>
+                            <p>
+                                Lorem ipsum dolor sit
+                                amet, consectetur adip
+                                iscing elit...
+                            </p>
+                        </div>                         -->
+                        <div class="card-li">
+                            <div class="list-img"></div>
+                            <p class="brand-title" style="text-align: center;">敬请期待</p>
+                            <span class="block"></span>
+                            <p>
+                                名牌持续更新中...
+                            </p>
+                        </div>
+                    </div>
+                    <script id="cardList"  type="text/x-jquery-tmpl">
+                        {{each(i,item) card_list}}
+                          <div class="card-li">
+                          <img src="${item.thumb}" alt="">
+                          <p class="brand-title"><a href="cardDetail.html?itemid=${item.itemid}">${item.title}</a></p>
+                          <span class="block"></span>
+                          <p><a href="cardDetail.html?itemid=${item.itemid}">${item.introduce}</a> </p>
+                          </div>
+                        {{/each}}
+                    </script>
+                </div>
+                <button class="btn-more">查看更多</button>
+            </div>
+            <div class="successful-case" id="successfulCase">
+                <div class="main-header-title">
+                        <h4>成功案例</h4><div class="main-header-more"><a href="caseList.html">更多></a></div>
+                    </ul>
+                </div>
+                <div class="success-cont">
+                   
+
+                </div>
+                <script id="movieTmpl" type="text/x-jquery-tmpl">
+                    <div class="success-cont-glory">
+                            <p><img src="img/success_case_logo.png" alt="">2019十大品牌荣誉榜单</p>
+                            <div class="success-cont-glory-footer">
+                                <div class="scgf-font">
+                                    <p>中国${catname}</p>
+                                    <p>${addtime}</p>
+                                </div>
+                                <div class="scgf-right">
+                                    <button><a href="caseDate.html?sid=${catid}">去看看</a></button>
+                                </div>
+                            </div>
+                        </div>
+                </script>
+                <button  class="btn-more" style="margin-top: 0.25rem;">查看更多</button>
+                <!-- success-cont  over -->
+            </div>
+            <!-- 成功案例的结束 -->
+            <div class="content">
+                <p class="content-title" id="contentTitle">revbfnbu</p>
+                <img src="img/index_footer.png" alt="">
+                <div class="content-fonts">
+                    <!-- 框架宗旨小 div -->
+                    <div class="found-ground">
+                        <ul class="found-ground-top">
+                            <li><img src="img/definition.png" alt=""></li>
+                            <li>定义</li>
+                        </ul>
+                        <div id="define">
+                            <p>
+                                品牌时代以“诚”见实力，数据时代以"精"赢未来，品牌中网以消费者及经营者为主，凭借着自身数据库优势，推出各个行业中的口碑品牌，十大品牌是各个行业中的领军者，也是中国市场品牌的真实见证者。
+                            </p>
+                            <p>
+                                品牌中网的品牌数达到30万之多，入驻企业达到18万之多，而参与投票的用户更是达到将近80万，如此庞大的数据信息，更是体现了品牌中网的公正性以及合理性，为消费者以及经营者提供更为有效的品牌信息名单。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 第一个框 -->
+                    <div class="found-ground">
+                        <ul class="found-ground-top">
+                            <li><img src="img/purpose.png" alt=""></li>
+                            <li>目的</li>
+                        </ul>
+                        <div id="objective">
+                            <p>
+                                十大品牌旨在打造品牌的诚信度，并维护消费者的权益，十大品牌对于企业以及经营者来说，都是十分有利的。对于企业，十大品牌可以提高该品牌的知名度，让消费者更快了解品牌的相关信息，
+                                同时也可为消费者提供更好的消费理念，节省消费者的时间以及精力。而对于经营者，十大品牌通过参考相关数据，能够为经营者找寻更合适的品牌，让经营者达成最终目的。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 第er个框 -->
+                    <div class="found-ground">
+                        <ul class="found-ground-top">
+                            <li><img src="img/produce.png" alt=""></li>
+                            <li>产生</li>
+                        </ul>
+                        <div id="produce">
+                            <p>
+                                十大品牌有自己的透明公开性原则，以消费者满意度关注度等为依据，是用户最终结果的表现。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 第三个框 -->
+                    <div class="found-ground">
+                        <ul class="found-ground-top">
+                            <li><img src="img/objective.png" alt=""></li>
+                            <li>客观性</li>
+                        </ul>
+                        <div id="objectivity">
+                            <p>
+                                十大品牌有极强客观性，通过多种数据来源，如国家权威数据、公司详情信息、市场公开信息、媒体及互联网内容等数据信息，对于恶意引导企业消费上，十大品牌是坚决杜绝的，所以十大品牌是真正意义上用户满意度以及最终结果的真实表现。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 第四个框 -->
+                    <div class="found-ground">
+                        <ul class="found-ground-top">
+                            <li><img src="img/monitor.png" alt=""></li>
+                            <li>实施与监督</li>
+                        </ul>
+                        <div id="monitor">
+                            <p>
+                                十大品牌会实时对名单进行检测监督，并十分关注消费者的投诉反馈信息，一旦发现问题，会立即将问题品牌进行进一步的处理，以实现公正与透明的监督结果。当然，十大品牌的名单也并不是一成不变的，
+                                品牌名单会根据品牌的价值，并随着时间的推移有所变化，最终以实际品牌消费特点进行排名。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 第无个框 -->
+                </div>
+            </div>
+
+        </div>
+        <!-- main  的结束 -->
+
+    </div>
+    <div class="listTitle">
+        <ul class="tablist" id="tablist">
+            <li><a href="#brandCard">品牌名片</a>
+            </li>
+            <li><a href="#successfulCase">成功案例</a>
+            </li>
+            <li><a href="#contentTitle">活动宗旨</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 在线客服 -->
+    <div class="body-cont">
+        <div class="body-cont-main">
+            <ul id="taskList">
+                <li>
+                    <img src="img/menu_tel_btn.png" alt="">
+                    <p>客服电话</p>
+                </li>
+                <li>
+                    <img src="img/menu_service_btn.png" alt="">
+                    <p>在线客服</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="index-footer-btn" id="morebtn">
+        <img src="img/menu_yellow_btn.png" alt="">
+    </div>
+    <!-- 拨打电话的div -->
+    <div class="task-body">
+        <div class="task">
+            <div class="task-top">
+                <hr>
+                <p>客服电话</p>
+            </div>
+            <div class="task-font">
+                <p>
+                    品牌中网客服电话为:
+                </p>
+                <p id="tel">
+                    400-182-9123
+                </p>
+            </div>
+            <ul>
+                <li id="offBtn">取消</li>
+                <li>确定拨打</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="js/jquery-1.7.min.js"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>成功案例-详情页</title>
+    <link rel="stylesheet" href="css/succes.css" />
+    <script type="text/javascript">
+      ;(function() {
+        updateFontSize()
+
+        function updateFontSize() {
+          var width = document.documentElement.getBoundingClientRect().width
+          // console.log(width);
+          var fontSize = width / 7.5
+          document.documentElement.style.fontSize = fontSize + 'px'
+        }
+        window.onresize = function() {
+          updateFontSize()
+        }
+      })()
+    </script>
+  </head>
+
+  <body>
+    <div class="warp">
+      <div id="seccesHeader">
+        <div class="secces-header-title">
+          <p>柜式医疗美容器材</p>
+          <p><span>2019</span>年度 · 十大品牌榜单</p>
+        </div>
+      </div>
+      <div id="seccesContent">
+        <script id="caseDetail" type="text/x-jquery-tmpl">
+          {{each(i,item) brand_list}}
+          <div class="informention">
+            <div class="inforName">
+              <div class="inforName-leftImg" id="round">
+                {{if ranking<4}}
+                    <img src="img/crown${item.ranking}.png" alt="" id="king" class="one" />
+                {{/if}}
+                <img src="${item.thumb}" alt="" />
+              </div>
+              <div class="inforName-rightP">
+                <div id="rightP">
+                  <span>{{= item.ranking}}</span>
+                  <p>{{= item.title}}</p>
+                </div>
+                <p>${item.company}</p>
+              </div>
+            </div>
+            <div class="inforGround">
+              <ul>
+                <li>
+                  <img src="img/address@2x.png" alt="" />
+                </li>
+                <li>${item.address}</li>
+              </ul>
+              <ul>
+                <li>
+                  <img src="img/site@2x.png" alt="" />
+                </li>
+                <li>公司网址：${item.homepage}</li>
+              </ul>
+            </div>
+          </div>
+          {{/each}}
+        </script>
+        <!-- <div class="informention">
+          <div class="inforName">
+            <div class="inforName-leftImg" id="round">
+              <img src="img/crown_1.png" alt="" class="king" class="one" />
+              <img src="img/card_midea.png" alt="" />
+            </div>
+            <div class="inforName-rightP">
+              <div id="rightP">
+                <span>1</span>
+                <p>瑞闪科技</p>
+              </div>
+              <p>
+                北京市瑞闪科技有限责任得需要 占位公司
+              </p>
+            </div>
+          </div>
+          <div class="inforGround">
+            <ul>
+              <li><img src="img/address@2x.png" alt="" /></li>
+              <li>
+                北京市海淀区天作国际大厦天作国际大厦天作 国际大厦
+              </li>
+            </ul>
+            <ul>
+              <li><img src="img/site@2x.png" alt="" /></li>
+              <li>公司网址：www.ruishan.com</li>
+            </ul>
+          </div>
+        </div> -->
+        <!-- 第一框的结束 -->
+      </div>
+    </div>
+  </body>
+  <script src="js/jquery-1.7.min.js"></script>
+  <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+  <script src="js/caseDate.js"></script>
+  <script src="js/utils.js"></script>
+</html>
